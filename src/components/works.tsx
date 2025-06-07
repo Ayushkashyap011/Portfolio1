@@ -90,8 +90,7 @@ export const Works = () => {
   return (
     <SectionWrapper idName="projects">
       <>
-        {/* Background */}
-        <StarsCanvas />
+        
 
         {/* Title */}
         <motion.div variants={textVariant()}>
@@ -117,6 +116,8 @@ export const Works = () => {
             <ProjectCard key={`project-${i}`} index={i} {...project} />
           ))}
         </div>
+        {/* Background */}
+        <StarsCanvas />
       </>
     </SectionWrapper>
   );
